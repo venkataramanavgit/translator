@@ -17,9 +17,7 @@ hyperframe==5.2.0
 idna==2.10
 Js2Py==0.71
 packaging==21.0
-pipwin==0.5.1
-playsound==1.2.2
-PyAudio @ file:///C:/Users/user/pipwin/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
+
 pyjsparser==2.7.1
 pyparsing==2.4.7
 PyPrind==2.11.3
