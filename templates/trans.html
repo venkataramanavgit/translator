@@ -1,0 +1,35 @@
+  {% extends "base.html" %}
+        {% block content %}
+  <form action="{{ url_for('speak') }}" method="post">
+    <label for="op">Choose the output language:</label>
+  <select name="op" id="op">
+    <option value="te">Telugu</option>
+    <option value="en">English</option>
+    <option value="hi">Hindi</option>
+    <option value="ta">Tamil</option>
+      <option value="jw">japanese</option>
+      <option value="ko">korean</option>
+      <option value="ml">malayalam</option>
+      <option value="ne">nepali</option>
+      <option value="or">odia</option>
+      <option value="fi">french'</option>
+  </select>
+  <br><br>
+      <input type="submit" value="speak now">
+</form>
+
+
+  <hr>
+    <h1>Your audio</h1>
+        <audio controls>
+  <source src="{{url_for('static', filename='anylang1.mp3' , type='audio/mpeg')}}">
+
+  Your browser does not support the audio element.
+  </audio>
+  <h1>Translated audio</h1>
+       <audio controls>
+  <source src="{{url_for('static', filename='anylang.mp3' , type='audio/mpeg')}}">
+
+  Your browser does not support the audio element.
+  </audio>
+        {% endblock %}
